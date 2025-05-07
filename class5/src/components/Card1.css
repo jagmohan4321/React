@@ -1,0 +1,12 @@
+.Card1{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(255, 24, 24);
+    border: 2px solid white;
+    color: white;
+    border-radius: 4%;
+    margin: 0 auto;
+}
+#com{
+    background-color: black;
+}
