@@ -1,0 +1,51 @@
+.outerValues {
+    width: 600px;
+    height: 600px;
+    background-color: rgb(209, 114, 114);
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    font-size: large;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+.leftData_RightDat {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.innerArray {
+    width: 200px;
+    height: 300px;
+    background-color: rgb(24, 215, 11);
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-size: large;
+    font-weight: 700;
+}
+
+.innerObject {
+
+    width: 200px;
+    height: 300px;
+    background-color: rgb(5, 209, 255);
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-size: large;
+    font-weight: 700;
+
+}
