@@ -1,20 +1,22 @@
-import { CityData } from "./utils.js/CityData.js"
-import Card from "./components/Card.jsx";
-import { Routes, Route, Link } from "react-router-dom";
-import CardItemData from "./components/CardItemsData.jsx"
+import { CityData } from "./utils.js/CityData";
+import Card from "./components/Card";
 import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import MyCart from "./components/MyCart";
 function App() {
-const [cardData,setCardData]=useState([]);
+  console.log("city data value inside card", CityData);
+  const [addCart, setAddCart] = useState([]);
 
   return (
 
     <div className="App">
       <Routes>
-
-        <Route path="/" element={<Card CityData={CityData} setCardData={setCardData} />} />
-        <Route path="/card" element={<CardItemData cardData={cardData} />} />
-
+        <Route path="/" element={<Card data={CityData} setAddCart={setAddCart} addCart={addCart} />} />
+        <Route path="/cart" element={<MyCart addCart={addCart} />} />
       </Routes>
+
+
+
     </div>
 
   );

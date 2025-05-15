@@ -1,0 +1,45 @@
+.singleCard {
+    height: 250px;
+    width: 300px;
+    background-color: violet;
+    border: 2px solid orange;
+    border-radius: 10px;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.Container {
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 1.5em;
+
+}
+
+.badaContainer{
+    width: 100%;
+}
+.btn {
+    width: 300px;
+    background-color: green;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-radius: 10px;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.nofound{
+    margin-top:10em ;
+    color: black;
+    font-size: 30px;
+}

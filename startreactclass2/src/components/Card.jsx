@@ -1,48 +1,22 @@
-
-// export default function Card({ CityData }) {
-//     console.log("inside card component",CityData);
-
-//     return (
-//         <div>
-//             <div>
-//                 <p>this is card</p>
-//                 <p>{CityData?.id}</p>
-//                 <p>{CityData?.cityname}</p>
-//                 <p>{CityData?.cityinfo}</p>
-//                 <p>{CityData?.livingPrice}</p>
-//             </div>
-//         </div>
-//     )
-// }
-
-
-import './Card.css';
+import CardDetails from './CardDetails';
+import Style from "../components/Style.css"
 import { Link } from 'react-router-dom';
-export default function Card({ CityData,setCardData }) {
-    console.log("inside card component", CityData);
-
-    function addItem(item){
-        setCardData(item)
-    }
+export default function Card({ data, setAddCart,addCart }) {
+    console.log("card component ke andar ", data);
 
     return (
         <div>
-            {
-                CityData?.map((CityData, index) => {
-                    return (<div className='card' key={index}>
-                        <p>{CityData?.id}</p>
-                        <p>{CityData?.cityname}</p>
-                        <p>{CityData?.livingPrice}</p>
-                        <p>{CityData?.cityinfo}</p>
-                        <button onClick={addItem(CityData)}>Add to Card</button>
-                    </div>)
-                })
+            <div className='Container'>
 
-            }
-            <Link to="/card"><button>Go to Card</button></Link>
-
-
-
+                {
+                    data?.map((item, index) => {
+                        return <div key={index} ><CardDetails item={item} setAddCart={setAddCart} addCart={addCart}/></div>
+                    })
+                }
+                {/* this button use to go in my cart components */}
+            </div>
+            <Link to="/cart"> <button className='btn'>Go to My Cart</button>
+            </Link>
         </div>
-    );
+    )
 }
