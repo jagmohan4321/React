@@ -1,0 +1,13 @@
+.formContainer {
+    width: 50%;
+    height: 400px;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.box{
+    padding: 2em;
+
+}
