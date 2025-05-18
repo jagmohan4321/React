@@ -1,0 +1,14 @@
+.container{
+    width: 50%;
+    height: 600px;
+    background-color: violet;
+    border: 2px solid red;
+    border-radius: 14px;
+    margin:  0 auto;
+    margin-top: 2em;
+}
+
+.box{
+    width: 50%;
+    height: 60px;
+}
