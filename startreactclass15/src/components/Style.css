@@ -1,0 +1,122 @@
+/* Navbar container */
+.navbar {
+  width: 100%;
+  background-color: #1e1e2f;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Nav list */
+.nav-list {
+  width: 90%;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav link wrapper */
+.nav-link {
+  text-decoration: none;
+  color: #ede7e7;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.nav-link:hover {
+  color: #ffcc00;
+}
+
+/* Active nav link */
+.nav-link.active {
+  /* border-bottom: 2px solid #ffcc00; */
+  color: #0d459a;
+}
+
+/* Optional: Style the <li> for better click area */
+.nav-link li {
+  padding: 0.5rem 1rem;
+}
+
+
+.user-card {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.user-card h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: #222;
+  text-align: center;
+}
+
+.user-card p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.user-card span {
+  font-weight: 600;
+  color: #444;
+  display: inline-block;
+  width: 140px;
+}
+
+.user-card button {
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.user-card button:hover {
+  background-color: #0056b3;
+}
+
+.BigContainer {
+  width: 100%;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+
+.increDcre{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: blue;
+  color: white;
+  border-radius: 20px;
+}
+
+.inBtn{
+  cursor: pointer;
+}
